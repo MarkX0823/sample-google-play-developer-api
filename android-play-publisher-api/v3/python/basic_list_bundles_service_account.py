@@ -22,15 +22,10 @@ from apiclient.discovery import build
 import httplib2
 from oauth2client.service_account import ServiceAccountCredentials
 
-
-SERVICE_ACCOUNT_EMAIL = (
-    'test-802@api-7951359995911443008-213289.iam.gserviceaccount.com')
-
 # Declare command-line flags.
 argparser = argparse.ArgumentParser(add_help=False)
 argparser.add_argument('package_name',
                        help='The package name. Example: com.android.sample')
-
 
 def main():
   # Create an httplib2.Http object to handle our HTTP requests and authorize it
